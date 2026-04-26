@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="/style/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="/style/index.css">
+  <script src="/index.js" defer></script>
 </head>
+
 <body>
-        <div class="board">
-            <div class="cell" data-index="0"></div>
-            <div class="cell" data-index="1"></div>
-            <div class="cell" data-index="2"></div>
-            <div class="cell" data-index="3"></div>
-            <div class="cell" data-index="4"></div>
-            <div class="cell" data-index="5"></div>
-            <div class="cell" data-index="6"></div>
-            <div class="cell" data-index="7"></div>
-            <div class="cell" data-index="8"></div>
-        </div>
-    <script src = "/index.js"></script>
+  <div class="container">
+
+    <!-- 🏷 Title -->
+    <h1>Tic Tac Toe</h1>
+
+    <!-- 👤 Player Setup -->
+    <div class="setup">
+      <input type="text" id="player1" placeholder="Player 1 name">
+      <input type="text" id="player2" placeholder="Player 2 name">
+      <button id="start">Start Game</button>
+    </div>
+
+    <!-- 📢 Status Display -->
+    <p id="status">Click start to begin</p>
+
+    <!-- 🎮 Game Board -->
+    <div class="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <!-- 🔁 Restart -->
+    <button id="restart">Restart</button>
+
+  </div>
 </body>
 </html>
